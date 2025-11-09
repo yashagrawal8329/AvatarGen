@@ -1,5 +1,3 @@
-# AvatarGen
-AI-Based Avatar Creation Assignment for Intern
 # 🤖 AvatarGen: AI-Powered Avatar Generator
 
 ![AvatarGen_Demo_Screenshot](assets/app_screenshot.png) 
@@ -26,16 +24,21 @@ AvatarGen is a simple, web-based application designed to generate customizable d
 
 ## 🛠️ Setup Instructions
 
-Follow these steps to set up and run the **AvatarGen** application locally.
+This project is designed to run primarily in a **Google Colab** environment, which provides the necessary GPU resources.
 
 ### Prerequisites
 
-* Python 3.9+
-* A machine with a GPU (highly recommended for faster inference)
-* `pip` package manager
+* A **Google Account** to access Colab.
+* **GPU runtime** is required for model inference (Runtime -> Change runtime type -> T4 or V100 GPU).
+* The **`app.py`** script and **`requirements.txt`** must be accessible (cloned) in the Colab environment.
 
 ### 1. Clone the Repository
 
+Open a new code cell in your Colab notebook and run the following commands to clone the project and navigate into the directory:
+
 ```bash
-git clone [https://github.com/](https://github.com/)[your-github-username]/AvatarGen.git
-cd AvatarGen
+# Clone the project from GitHub
+!git clone [https://github.com/](https://github.com/)[your-github-username]/AvatarGen.git
+
+# Change into the project directory
+%cd AvatarGen
